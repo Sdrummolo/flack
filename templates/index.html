@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flack</title>
+		<!-- External -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/1cd741a2d5.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Main css -->
+		<link
+			rel="stylesheet"
+			href="{{url_for('static', filename='css/style.css')}}"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<!-- Sidebar -->
+			<nav id="sidebar">
+				<div id="sidebar-username-container">
+					<i class="fas fa-circle fa-xs"></i>
+					<h3 id="sidebar-username">
+						{{ username }}
+					</h3>
+				</div>
+				<!-- Channel list -->
+				<div id="channels">
+					<h3>Channels</h3>
+					<ul id="channels-list"></ul>
+				</div>
+				<!-- Add channel -->
+				<div id="add-channel">
+					<h3>Add channel</h3>
+					<form action="" id="add-channel-form" autocomplete="off">
+						<input
+							type="text"
+							placeholder="Add channel"
+							id="new-channel"
+						/>
+						<button type="submit" id="channel-submit" disabled>
+							<i class="fas fa-plus-circle fa-2x"></i>
+						</button>
+					</form>
+				</div>
+				<!-- Users lits -->
+				<div id="users">
+					<h3>Online users</h3>
+					<ul id="users-list"></ul>
+				</div>
+			</nav>
+			<!-- Main content -->
+			<div id="content">
+				<nav id="top-nav">
+					<h2 id="nav-channel"></h2>
+					<a href="/login">Log Out</a>
+				</nav>
+				<div id="messages"></div>
+				<div id="add-message">
+					<form action="" id="send-message-form">
+						<input
+							type="text"
+							placeholder="Enter message"
+							id="new-message"
+							autocomplete="off"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Socket.IO -->
+		<script
+			type="text/javascript"
+			src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"
+		></script>
+		<!-- Main JS -->
+		<script src="{{url_for('static', filename='app.js')}}"></script>
+	</body>
+</html>

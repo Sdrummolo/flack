@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  font-size: 16px;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.message {
+  margin: 30px 0;
+}
+.message .msg-data {
+  display: flex;
+}
+.message .msg-data i {
+  background: #77d8ff;
+  color: #cbf0ff;
+  padding: 5px;
+}
+.message .msg-data .msg-username {
+  font-weight: 600;
+  margin-left: 10px;
+}
+.message .msg-data .msg-time {
+  margin-left: 10px;
+  color: #8d8d8d;
+}
+.message .msg-text {
+  margin-top: -30px;
+  margin-left: 63px;
+  color: #757575;
+}
+.message .msg-text p {
+  line-height: 30px;
+}
+
+#sidebar {
+  min-width: 240px;
+  max-width: 240px;
+  width: 240px;
+  height: 100%;
+  background: #465881;
+  color: #fff;
+}
+#sidebar ::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+#sidebar ::-webkit-scrollbar-thumb {
+  background: #c9d1d3;
+}
+#sidebar #sidebar-username-container {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  background: #1b2a49;
+}
+#sidebar #sidebar-username-container i {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #32be39;
+}
+#sidebar #sidebar-username-container h3 {
+  font-weight: 400;
+  margin-left: 7px;
+}
+#sidebar h3 {
+  font-weight: 600;
+}
+#sidebar #channels,
+#sidebar #add-channel,
+#sidebar #users {
+  margin: 40px 0;
+}
+#sidebar #channels h3,
+#sidebar #add-channel h3,
+#sidebar #users h3 {
+  margin: 10px 15px;
+}
+#sidebar #channels li span,
+#sidebar #add-channel li span,
+#sidebar #users li span {
+  color: rgba(255, 255, 255, 0.5);
+}
+#sidebar #channels li a,
+#sidebar #add-channel li a,
+#sidebar #users li a {
+  display: block;
+  padding: 5px 15px;
+}
+#sidebar #channels li:hover,
+#sidebar #add-channel li:hover,
+#sidebar #users li:hover {
+  background: #00909e;
+}
+#sidebar #channels .li-selected,
+#sidebar #add-channel .li-selected,
+#sidebar #users .li-selected {
+  background: #00909e;
+}
+#sidebar #channels .li-selected:hover,
+#sidebar #add-channel .li-selected:hover,
+#sidebar #users .li-selected:hover {
+  background: #00909e;
+}
+#sidebar #channels-list,
+#sidebar #users-list {
+  background: #1b2a49;
+  max-height: 250px;
+  overflow: auto;
+}
+#sidebar #users li {
+  padding: 5px 15px;
+}
+#sidebar #users li:hover {
+  background: transparent;
+}
+#sidebar #users i {
+  color: #32be39;
+}
+#sidebar #add-channel form {
+  padding: 0 15px;
+  display: flex;
+}
+#sidebar #add-channel form input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+#sidebar #add-channel form input::placeholder {
+  color: #fff;
+}
+#sidebar #add-channel form button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+#sidebar #add-channel form button i {
+  padding-right: 7px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
+}
+#sidebar #add-channel form button i:hover {
+  color: #fff;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  border-bottom: 1px solid #8d8d8d;
+}
+#top-nav a {
+  margin-top: auto;
+  color: #8d8d8d;
+}
+
+#messages {
+  width: 100%;
+  padding: 10px 25px;
+  overflow: auto;
+}
+
+#add-message {
+  padding: 15px;
+  width: 100%;
+  margin-top: auto;
+}
+#add-message #send-message-form {
+  display: flex;
+  width: 100%;
+}
+#add-message #send-message-form input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: #8d8d8d solid 1px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
