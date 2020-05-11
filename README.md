@@ -1,10 +1,24 @@
-# Project 2
+# Flack
 
-Web Programming with Python and JavaScript
+Chat application based on Socket.IO
 
-How to use:
+### Usage
 
-1. First Enter your Username to start chatting
-2. You can create new a channel by giving it a name that is not already taken
-3. You can chat on any channel you desire
-4. If you close the window, the application will remember your last opened channel and will take you back to it
+1. git clone
+2. pip install -r requirements.txt
+3. flask run
+
+### Features added:
+
+- Log in
+- Create channels
+- Chat in any channel
+- View who is online
+- Local storage
+
+### Technologies used:
+
+- Flask
+- Socket.IO
+- Javascript
+- Sass

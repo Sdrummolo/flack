@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- External -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Main CSS -->
-		<link
-			rel="stylesheet"
-			href="{{ url_for('static', filename='css/login.css') }}"
-		/>
-		<title>Welcome To Flack!</title>
-	</head>
-	<body>
-		<div id="container">
-			<div id="content">
-				<div class="form-group header">
-					<h1>
-						Welcome to Flack
-					</h1>
-					<p>Slack-like webapp based on Flask</p>
-				</div>
-				<div class="form-group form">
-					<form action="" method="POST">
-						<input
-							type="text"
-							placeholder="Username"
-							autocomplete="off"
-							name="username"
-							maxlength="20"
-							required
-						/>
-						<button type="submit">Log In</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<script src="{{url_for('static', filename='login.js')}}"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+    <title>Welcome To Flack!</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <div class="form-group header">
+          <h1>
+            Welcome to Flack
+          </h1>
+          <p>Slack-like webapp based on Flask</p>
+        </div>
+        <div class="form-group form">
+          <form action="" method="POST">
+            <input
+              type="text"
+              placeholder="Username"
+              autocomplete="off"
+              name="username"
+              maxlength="20"
+              required
+            />
+            <button type="submit">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='login.js')}}"></script>
+  </body>
 </html>

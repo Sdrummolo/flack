@@ -1,2 +1,2 @@
-localStorage.removeItem("currentUser");
-localStorage.removeItem("currentChannel");
+localStorage.removeItem("currentUser")
+localStorage.removeItem("currentChannel")
